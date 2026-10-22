@@ -1,0 +1,57 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title class="ion-text-center">
+      <h1 class="titulo-pagina">
+        <ion-icon name="calendar-outline"></ion-icon>
+        Agenda
+      </h1>
+      <span class="fecha-header">XX/XX/XX</span>
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="segmento-filtros">
+    <ion-button fill="outline" color="dark">
+      <ion-icon slot="start" name="today-outline"></ion-icon>
+      Día
+    </ion-button>
+    <ion-button fill="outline" color="dark">
+      <ion-icon slot="start" name="calendar-number-outline"></ion-icon>
+      Mes
+    </ion-button>
+    <ion-button fill="outline" color="dark">
+      <ion-icon slot="start" name="time-outline"></ion-icon>
+      Año
+    </ion-button>
+  </div>
+
+  <div class="lista-horarios">
+    <div class="item-hora"><span class="hora">08:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">09:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">10:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">11:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">12:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">13:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">14:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">15:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">16:00</span> <div class="bloque-agenda"></div></div>
+    <div class="item-hora"><span class="hora">17:00</span> <div class="bloque-agenda"></div></div>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,94 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+
+    <ion-title>
+      Catálogo de Autos
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="sclase">
+    <p>Bienvenido al portal automotriz. Explora los diferentes modelos, especificaciones técnicas y ofertas especiales que tenemos disponibles para ti.</p>
+  </div>
+
+  <div id="sids">
+    <p>Vehículos Destacados</p>
+  </div>
+
+  <!-- Etiquetasd de ionic y uso de grids -->
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="2">
+        <div class="sclase">
+          <p>Sedán Ejecutivo: Excelente rendimiento de combustible, interiores en piel y tecnología de frenado autónomo para viajes en carretera.
+          </p>
+        </div>
+      </ion-col>
+
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="2">
+        <div class="sclase">
+          <p>SUV Familiar: Espacio para 7 pasajeros, tracción en las cuatro ruedas y máxima calificación en pruebas de seguridad vial.
+          </p>
+        </div>
+      </ion-col>
+
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="2">
+        <div class="sclase">
+          <p>Deportivo GT: Motor V8 turbocargado, aceleración de 0 a 100 km/h en 3.5 segundos y transmisión secuencial deportiva.
+          </p>
+        </div>
+      </ion-col>
+
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="2">
+        <div class="sclase">
+          <p>Hatchback Urbano: Tamaño compacto ideal para la ciudad, fácil estacionamiento y conectividad total con smartphones.
+          </p>
+        </div>
+      </ion-col>
+
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="2">
+        <div class="sclase">
+          <p>Pickup 4x4: Capacidad de carga superior a 1 tonelada, suspensión reforzada y listo para terrenos de alta exigencia.
+          </p>
+        </div>
+      </ion-col>
+
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="2">
+        <div class="sclase">
+          <p>Eléctrico Futurista: Cero emisiones, autonomía de más de 500 km por carga y sistema de conducción asistida.
+          </p>
+        </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col size="12" class="ion-text-center">
+
+        <ion-button id="open-action-sheet" fill="outline" class="ion-text-capitalize" color="morado">Abrir
+          opciones</ion-button>
+
+        <ion-action-sheet mode="md" trigger="open-action-sheet" header="Actions" [buttons]="botones">
+        </ion-action-sheet>
+
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

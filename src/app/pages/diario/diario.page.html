@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>
+      <h1 class="titulo-pagina">
+        <ion-icon name="journal-outline"></ion-icon>
+        Diario
+      </h1>
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="seccion-bitacora">
+    <h2>
+      <ion-icon name="create-outline"></ion-icon>
+      Bitacora personal
+    </h2>
+    <ion-textarea 
+      placeholder="Escribe aquí..." 
+      [rows]="8" 
+      class="caja-escritura">
+    </ion-textarea>
+  </div>
+
+  <div class="seccion-consulta">
+    <p class="texto-instruccion">
+      <ion-icon name="time-outline"></ion-icon>
+      <strong>Quieres saber que escribiste en esta semana, seleccione el dia:</strong>
+    </p>
+
+    <div class="contenedor-calendario">
+      <ion-datetime presentation="date"></ion-datetime>
+    </div>
+  </div>
+</ion-content>

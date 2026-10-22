@@ -1,0 +1,27 @@
+// For information on how to create your own theme, please refer to:
+// https://ionicframework.com/docs/theming/
+
+:root {
+	--colorMorado: #4A6FA5;
+
+
+	--ion-color-morado: #9033db;
+	--ion-color-morado-rgb: 144,51,219;
+	--ion-color-morado-contrast: #ffffff;
+	--ion-color-morado-contrast-rgb: 255,255,255;
+	--ion-color-morado-shade: #7f2dc1;
+	--ion-color-morado-tint: #9b47df;
+}
+
+.ion-color-morado {
+	--ion-color-base: var(--ion-color-morado);
+	--ion-color-base-rgb: var(--ion-color-morado-rgb);
+	--ion-color-contrast: var(--ion-color-morado-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-morado-contrast-rgb);
+	--ion-color-shade: var(--ion-color-morado-shade);
+	--ion-color-tint: var(--ion-color-morado-tint);
+}
+
+
+
+
